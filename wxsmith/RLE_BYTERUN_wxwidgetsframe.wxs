@@ -75,6 +75,7 @@
 					<object class="sizeritem">
 						<object class="wxButton" name="ID_BUTTON2" variable="Button2" member="yes">
 							<label>RLE</label>
+							<handler function="OnButton2Click" entry="EVT_BUTTON" />
 						</object>
 						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 						<border>5</border>
