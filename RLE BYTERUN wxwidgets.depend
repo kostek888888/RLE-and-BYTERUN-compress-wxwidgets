@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1446667740 source:c:\users\koste\onedrive\informatyka\semestr 3\c 2\projekt\rle byterun wxwidgets\resource.rc
+1484684640 source:c:\users\koste\onedrive\informatyka\semestr 3\c 2\projekt\rle byterun wxwidgets\resource.rc
 	"wx/msw/wx.rc"
 
 1412614972 c:\wxwidgets-3.0.2\include\wx\msw\wx.rc
@@ -19,7 +19,7 @@
 
 1412614972 c:\wxwidgets-3.0.2\include\wx\msw\rcdefs.h
 
-1483646459 source:c:\users\koste\onedrive\informatyka\semestr 3\c 2\projekt\rle byterun wxwidgets\rle_byterun_wxwidgetsapp.cpp
+1484684420 source:c:\users\koste\onedrive\informatyka\semestr 3\c 2\projekt\rle byterun wxwidgets\rle_byterun_wxwidgetsapp.cpp
 	"RLE_BYTERUN_wxwidgetsApp.h"
 	"RLE_BYTERUN_wxwidgetsMain.h"
 	<wx/image.h>
@@ -2132,11 +2132,15 @@
 	<string>
 	<algorithm>
 
-1484675054 source:c:\users\koste\onedrive\informatyka\semestr 3\c 2\projekt\rle byterun wxwidgets\rle_byterun_wxwidgetsmain.cpp
+1484685483 source:c:\users\koste\onedrive\informatyka\semestr 3\c 2\projekt\rle byterun wxwidgets\rle_byterun_wxwidgetsmain.cpp
 	"RLE_BYTERUN_wxwidgetsMain.h"
 	<wx/msgdlg.h>
+	<wx/filedlg.h>
 	"background_code.h"
+	<wx/bitmap.h>
+	<wx/icon.h>
 	<wx/intl.h>
+	<wx/image.h>
 	<wx/string.h>
 
 1412614972 c:\wxwidgets-3.0.2\include\wx\msgdlg.h
