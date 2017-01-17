@@ -13,11 +13,9 @@
 //(*Headers(RLE_BYTERUN_wxwidgetsFrame)
 #include <wx/sizer.h>
 #include <wx/stattext.h>
-#include <wx/menu.h>
 #include <wx/textctrl.h>
 #include <wx/button.h>
 #include <wx/frame.h>
-#include <wx/statusbr.h>
 //*)
 
 class RLE_BYTERUN_wxwidgetsFrame: public wxFrame
@@ -39,29 +37,31 @@ class RLE_BYTERUN_wxwidgetsFrame: public wxFrame
         static const long ID_STATICTEXT1;
         static const long ID_BUTTON1;
         static const long ID_TEXTCTRL1;
+        static const long ID_STATICTEXT5;
         static const long ID_BUTTON2;
         static const long ID_BUTTON3;
         static const long ID_STATICTEXT2;
+        static const long ID_BUTTON6;
+        static const long ID_BUTTON7;
         static const long ID_STATICTEXT3;
         static const long ID_TEXTCTRL2;
-        static const long ID_BUTTON4;
-        static const long ID_BUTTON5;
+        static const long ID_STATICTEXT6;
+        static const long ID_STATICTEXT7;
         static const long ID_STATICTEXT4;
-        static const long ID_MENUITEM1;
-        static const long idMenuAbout;
-        static const long ID_STATUSBAR1;
         //*)
 
         //(*Declarations(RLE_BYTERUN_wxwidgetsFrame)
-        wxButton* Button4;
         wxStaticText* StaticText2;
         wxButton* Button1;
+        wxStaticText* StaticText6;
         wxStaticText* StaticText1;
         wxStaticText* StaticText3;
         wxButton* Button2;
-        wxButton* Button5;
+        wxButton* Button6;
         wxButton* Button3;
-        wxStatusBar* StatusBar1;
+        wxStaticText* StaticText5;
+        wxStaticText* StaticText7;
+        wxButton* Button7;
         wxTextCtrl* TextCtrl2;
         wxTextCtrl* TextCtrl1;
         wxStaticText* StaticText4;

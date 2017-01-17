@@ -1710,11 +1710,12 @@
 1412614972 c:\wxwidgets-3.0.2\include\wx\univ\theme.h
 	"wx/string.h"
 
-1483728424 c:\users\koste\onedrive\informatyka\semestr 3\c 2\projekt\rle byterun wxwidgets\rle_byterun_wxwidgetsmain.h
-	<wx/menu.h>
-	<wx/gbsizer.h>
+1484665775 c:\users\koste\onedrive\informatyka\semestr 3\c 2\projekt\rle byterun wxwidgets\rle_byterun_wxwidgetsmain.h
+	<wx/sizer.h>
+	<wx/stattext.h>
+	<wx/textctrl.h>
+	<wx/button.h>
 	<wx/frame.h>
-	<wx/statusbr.h>
 
 1412614972 c:\wxwidgets-3.0.2\include\wx\menu.h
 	"wx/defs.h"
@@ -2087,4 +2088,38 @@
 1412614972 c:\wxwidgets-3.0.2\include\wx\sizer.h
 	"wx/defs.h"
 	"wx/window.h"
+
+1412614972 c:\wxwidgets-3.0.2\include\wx\stattext.h
+	"wx/defs.h"
+	"wx/control.h"
+	"wx/univ/stattext.h"
+	"wx/msw/stattext.h"
+	"wx/motif/stattext.h"
+	"wx/gtk/stattext.h"
+	"wx/gtk1/stattext.h"
+	"wx/osx/stattext.h"
+	"wx/cocoa/stattext.h"
+	"wx/os2/stattext.h"
+
+1412614972 c:\wxwidgets-3.0.2\include\wx\univ\stattext.h
+	"wx/generic/stattextg.h"
+
+1412614972 c:\wxwidgets-3.0.2\include\wx\generic\stattextg.h
+	"wx/stattext.h"
+
+1412614972 c:\wxwidgets-3.0.2\include\wx\msw\stattext.h
+
+1412614972 c:\wxwidgets-3.0.2\include\wx\motif\stattext.h
+
+1412614972 c:\wxwidgets-3.0.2\include\wx\gtk\stattext.h
+
+1412614972 c:\wxwidgets-3.0.2\include\wx\gtk1\stattext.h
+
+1412614972 c:\wxwidgets-3.0.2\include\wx\osx\stattext.h
+
+1412614972 c:\wxwidgets-3.0.2\include\wx\cocoa\stattext.h
+	"wx/cocoa/NSTextField.h"
+
+1412614972 c:\wxwidgets-3.0.2\include\wx\os2\stattext.h
+	"wx/control.h"
 
