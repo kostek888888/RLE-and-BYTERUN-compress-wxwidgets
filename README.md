@@ -8,6 +8,8 @@ RLE (Run Length Encoding) and ByteRun are compressing/decompressing text to make
 To simply test an app download files from ![THIS LINK](https://github.com/kostek888888/RLE-and-BYTERUN-compress-wxwidgets/releases) - one \*.exe and two \*.dll. Make sure that all of them are in the same folder or aplication won't start. For easy testing option called "read from file" please additionaly download file called "sample of input file.txt". 
 
 ## App screenshots:
+Here are couple screens of running app
+
 ### App design
 ![Image of app](app_screenshots/2.jpg)
 
