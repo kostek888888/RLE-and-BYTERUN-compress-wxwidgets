@@ -38,6 +38,8 @@ class RLE_BYTERUN_wxwidgetsFrame: public wxFrame
         void OnButton4Click(wxCommandEvent& event);
         void OnButton5Click(wxCommandEvent& event);
         void OnButton1Click(wxCommandEvent& event);
+        void OnButton8Click(wxCommandEvent& event);
+        void OnButton9Click(wxCommandEvent& event);
         //*)
 
         //(*Identifiers(RLE_BYTERUN_wxwidgetsFrame)
@@ -56,12 +58,16 @@ class RLE_BYTERUN_wxwidgetsFrame: public wxFrame
         static const long ID_BUTTON4;
         static const long ID_STATICTEXT3;
         static const long ID_TEXTCTRL2;
+        static const long ID_STATICTEXT10;
+        static const long ID_BUTTON8;
+        static const long ID_BUTTON9;
         static const long ID_STATICTEXT6;
         static const long ID_STATICTEXT7;
         static const long ID_STATICTEXT4;
         //*)
 
         //(*Declarations(RLE_BYTERUN_wxwidgetsFrame)
+        wxStaticText* StaticText10;
         wxStaticText* StaticText9;
         wxButton* Button4;
         wxStaticText* StaticText2;
@@ -77,9 +83,11 @@ class RLE_BYTERUN_wxwidgetsFrame: public wxFrame
         wxStaticText* StaticText5;
         wxStaticText* StaticText7;
         wxButton* Button7;
+        wxButton* Button9;
         wxTextCtrl* TextCtrl2;
         wxTextCtrl* TextCtrl1;
         wxStaticText* StaticText4;
+        wxButton* Button8;
         //*)
 
         DECLARE_EVENT_TABLE()

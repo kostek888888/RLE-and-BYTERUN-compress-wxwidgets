@@ -17,19 +17,24 @@ RLE (Run Length Encoding) and ByteRun are encoding/decoding or You can call that
 Here are couple screens of running app
 
 ### App design
-![Image of app](app_screenshots/2.jpg)
+![Image of app](app_screenshots/6.jpg)
 
 
 
 ### App responsiveness:
-![Image of app stretched](app_screenshots/3.jpg)
+![Image of app stretched](app_screenshots/9.jpg)
 
 
 
 ### App developing:
-![Image of developing](app_screenshots/1.jpg)
+![Image of developing](app_screenshots/5.jpg)
 
 
 
 ### App opening file to read:
-![Image of app](app_screenshots/4.jpg)
+![Image of app](app_screenshots/7.jpg)
+
+
+
+### App saving to file:
+![Image of app](app_screenshots/8)

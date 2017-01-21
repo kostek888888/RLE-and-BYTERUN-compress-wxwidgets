@@ -21,32 +21,6 @@
 #include <wx/string.h>
 //*)
 
-//helper functions
-enum wxbuildinfoformat {
-    short_f, long_f };
-
-wxString wxbuildinfo(wxbuildinfoformat format)
-{
-    wxString wxbuild(wxVERSION_STRING);
-
-    if (format == long_f )
-    {
-#if defined(__WXMSW__)
-        wxbuild << _T("-Windows");
-#elif defined(__UNIX__)
-        wxbuild << _T("-Linux");
-#endif
-
-#if wxUSE_UNICODE
-        wxbuild << _T("-Unicode build");
-#else
-        wxbuild << _T("-ANSI build");
-#endif // wxUSE_UNICODE
-    }
-
-    return wxbuild;
-}
-
 //(*IdInit(RLE_BYTERUN_wxwidgetsFrame)
 const long RLE_BYTERUN_wxwidgetsFrame::ID_STATICTEXT1 = wxNewId();
 const long RLE_BYTERUN_wxwidgetsFrame::ID_BUTTON1 = wxNewId();
@@ -63,6 +37,9 @@ const long RLE_BYTERUN_wxwidgetsFrame::ID_BUTTON5 = wxNewId();
 const long RLE_BYTERUN_wxwidgetsFrame::ID_BUTTON4 = wxNewId();
 const long RLE_BYTERUN_wxwidgetsFrame::ID_STATICTEXT3 = wxNewId();
 const long RLE_BYTERUN_wxwidgetsFrame::ID_TEXTCTRL2 = wxNewId();
+const long RLE_BYTERUN_wxwidgetsFrame::ID_STATICTEXT10 = wxNewId();
+const long RLE_BYTERUN_wxwidgetsFrame::ID_BUTTON8 = wxNewId();
+const long RLE_BYTERUN_wxwidgetsFrame::ID_BUTTON9 = wxNewId();
 const long RLE_BYTERUN_wxwidgetsFrame::ID_STATICTEXT6 = wxNewId();
 const long RLE_BYTERUN_wxwidgetsFrame::ID_STATICTEXT7 = wxNewId();
 const long RLE_BYTERUN_wxwidgetsFrame::ID_STATICTEXT4 = wxNewId();
@@ -83,7 +60,9 @@ RLE_BYTERUN_wxwidgetsFrame::RLE_BYTERUN_wxwidgetsFrame(wxWindow* parent,wxWindow
     wxFlexGridSizer* FlexGridSizer9;
     wxFlexGridSizer* FlexGridSizer2;
     wxFlexGridSizer* FlexGridSizer7;
+    wxFlexGridSizer* FlexGridSizer15;
     wxFlexGridSizer* FlexGridSizer8;
+    wxFlexGridSizer* FlexGridSizer14;
     wxFlexGridSizer* FlexGridSizer13;
     wxFlexGridSizer* FlexGridSizer12;
     wxFlexGridSizer* FlexGridSizer6;
@@ -98,12 +77,12 @@ RLE_BYTERUN_wxwidgetsFrame::RLE_BYTERUN_wxwidgetsFrame(wxWindow* parent,wxWindow
     	FrameIcon.CopyFromBitmap(wxBitmap(wxImage(_T("C:\\Users\\koste\\OneDrive\\Informatyka\\Semestr 3\\C 2\\Projekt\\RLE BYTERUN wxwidgets\\compress.ico"))));
     	SetIcon(FrameIcon);
     }
-    FlexGridSizer1 = new wxFlexGridSizer(10, 0, 0, 0);
+    FlexGridSizer1 = new wxFlexGridSizer(12, 0, 0, 0);
     FlexGridSizer1->AddGrowableCol(0);
     FlexGridSizer1->AddGrowableRow(1);
     FlexGridSizer1->AddGrowableRow(8);
     FlexGridSizer2 = new wxFlexGridSizer(1, 2, 0, 0);
-    StaticText1 = new wxStaticText(this, ID_STATICTEXT1, _("Type text below or load from file"), wxDefaultPosition, wxSize(183,13), wxALIGN_CENTRE, _T("ID_STATICTEXT1"));
+    StaticText1 = new wxStaticText(this, ID_STATICTEXT1, _("Type text below or load from file"), wxDefaultPosition, wxSize(183,14), wxALIGN_CENTRE, _T("ID_STATICTEXT1"));
     FlexGridSizer2->Add(StaticText1, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     Button1 = new wxButton(this, ID_BUTTON1, _("Load"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON1"));
     FlexGridSizer2->Add(Button1, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
@@ -154,6 +133,16 @@ RLE_BYTERUN_wxwidgetsFrame::RLE_BYTERUN_wxwidgetsFrame(wxWindow* parent,wxWindow
     TextCtrl2 = new wxTextCtrl(this, ID_TEXTCTRL2, wxEmptyString, wxDefaultPosition, wxSize(246,89), wxTE_MULTILINE|wxTE_READONLY|wxFULL_REPAINT_ON_RESIZE, wxDefaultValidator, _T("ID_TEXTCTRL2"));
     FlexGridSizer6->Add(TextCtrl2, 1, wxALL|wxEXPAND, 5);
     FlexGridSizer1->Add(FlexGridSizer6, 1, wxALL|wxEXPAND, 5);
+    FlexGridSizer14 = new wxFlexGridSizer(1, 2, 0, 0);
+    StaticText10 = new wxStaticText(this, ID_STATICTEXT10, _("Save current output to file"), wxDefaultPosition, wxDefaultSize, wxALIGN_CENTRE, _T("ID_STATICTEXT10"));
+    FlexGridSizer14->Add(StaticText10, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    Button8 = new wxButton(this, ID_BUTTON8, _("Save"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON8"));
+    FlexGridSizer14->Add(Button8, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    FlexGridSizer1->Add(FlexGridSizer14, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    FlexGridSizer15 = new wxFlexGridSizer(1, 1, 0, 0);
+    Button9 = new wxButton(this, ID_BUTTON9, _("Clear both textfields"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON9"));
+    FlexGridSizer15->Add(Button9, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    FlexGridSizer1->Add(FlexGridSizer15, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     FlexGridSizer8 = new wxFlexGridSizer(1, 3, 0, 0);
     FlexGridSizer8->AddGrowableCol(0);
     FlexGridSizer8->AddGrowableCol(1);
@@ -189,6 +178,8 @@ RLE_BYTERUN_wxwidgetsFrame::RLE_BYTERUN_wxwidgetsFrame(wxWindow* parent,wxWindow
     Connect(ID_BUTTON7,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&RLE_BYTERUN_wxwidgetsFrame::OnButton7Click);
     Connect(ID_BUTTON5,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&RLE_BYTERUN_wxwidgetsFrame::OnButton5Click);
     Connect(ID_BUTTON4,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&RLE_BYTERUN_wxwidgetsFrame::OnButton4Click);
+    Connect(ID_BUTTON8,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&RLE_BYTERUN_wxwidgetsFrame::OnButton8Click);
+    Connect(ID_BUTTON9,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&RLE_BYTERUN_wxwidgetsFrame::OnButton9Click);
     //*)
 }
 
@@ -201,12 +192,6 @@ RLE_BYTERUN_wxwidgetsFrame::~RLE_BYTERUN_wxwidgetsFrame()
 void RLE_BYTERUN_wxwidgetsFrame::OnQuit(wxCommandEvent& event)
 {
     Close();
-}
-
-void RLE_BYTERUN_wxwidgetsFrame::OnAbout(wxCommandEvent& event)
-{
-    wxString msg = wxbuildinfo(long_f);
-    wxMessageBox(msg, _("Welcome to..."));
 }
 
 void RLE_BYTERUN_wxwidgetsFrame::OnTextCtrl1Text(wxCommandEvent& event)
@@ -297,10 +282,29 @@ void RLE_BYTERUN_wxwidgetsFrame::OnButton1Click(wxCommandEvent& event)
     wxString filename = wxFileSelector("Choose file",
         "", "", ".txt",
         "*.txt|*.txt|All files|*.*",
-        wxFD_OPEN | wxFD_FILE_MUST_EXIST, this);
+        wxFD_OPEN | wxFD_FILE_MUST_EXIST | wxFD_CHANGE_DIR, this);
 
     if(filename != wxString(wxT("")))
     {
         TextCtrl1->LoadFile(filename);
     }
+}
+
+void RLE_BYTERUN_wxwidgetsFrame::OnButton8Click(wxCommandEvent& event)
+{
+    wxString filename = wxFileSelector("Save to file",
+        "", "", ".txt",
+        "*.txt|*.txt|All files|*.*",
+        wxFD_SAVE | wxFD_CHANGE_DIR | wxFD_OVERWRITE_PROMPT, this);
+
+    if(filename != wxString(wxT("")))
+    {
+        TextCtrl2->SaveFile(filename);
+    }
+}
+
+void RLE_BYTERUN_wxwidgetsFrame::OnButton9Click(wxCommandEvent& event)
+{
+    TextCtrl1->SetValue(wxString(wxT("")));
+    TextCtrl2->SetValue(wxString(wxT("")));
 }

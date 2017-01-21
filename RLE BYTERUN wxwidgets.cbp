@@ -51,7 +51,6 @@
 		<Unit filename="RLE_BYTERUN_wxwidgetsMain.h" />
 		<Unit filename="background_code.cpp" />
 		<Unit filename="background_code.h" />
-		<Unit filename="obj/Release/resource.res" />
 		<Unit filename="resource.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>
