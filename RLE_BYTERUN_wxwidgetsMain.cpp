@@ -198,6 +198,11 @@ void RLE_BYTERUN_wxwidgetsFrame::OnTextCtrl1Text(wxCommandEvent& event)
 {
 }
 
+/*!
+* @brief Przycisk RLE: Jeśli pole Input nie jest puste wpisuje do zmiennej textInput zawartość pola tekstowego Input do skompresowania następnie. Następnie zapisuje do zmiennej compressed wynik wywołanej z pliku zewnętrznego funkcji kompresującej algorytmem RLE i wypisuje ten wynik do pola tektowego Output
+* @param
+* @return 
+*/
 void RLE_BYTERUN_wxwidgetsFrame::OnButton2Click(wxCommandEvent& event)
 {
     std::string textinput, compressed;
@@ -213,6 +218,11 @@ void RLE_BYTERUN_wxwidgetsFrame::OnButton2Click(wxCommandEvent& event)
     }
 }
 
+/*!
+* @brief Przycisk BYTERUN: Jeśli pole Input nie jest puste wpisuje do zmiennej textInput zawartość pola tekstowego Input do skompresowania następnie. Następnie zapisuje do zmiennej compressed wynik wywołanej z pliku zewnętrznego funkcji kompresującej algorytmem Byterun i wypisuje ten wynik do pola tektowego Output
+* @param
+* @return 
+*/
 void RLE_BYTERUN_wxwidgetsFrame::OnButton3Click(wxCommandEvent& event)
 {
     std::string textinput, compressed;
@@ -228,6 +238,11 @@ void RLE_BYTERUN_wxwidgetsFrame::OnButton3Click(wxCommandEvent& event)
     }
 }
 
+/*!
+* @brief Przycisk Dec RLE: Jeśli pole Input nie jest puste wpisuje do zmiennej textInput zawartość pola tekstowego Input do skompresowania następnie. Następnie zapisuje do zmiennej compressed wynik wywołanej z pliku zewnętrznego funkcji dekompresującej algorytmem RLE i wypisuje ten wynik do pola tektowego Output
+* @param
+* @return 
+*/
 void RLE_BYTERUN_wxwidgetsFrame::OnButton6Click(wxCommandEvent& event)
 {
     std::string textinput, compressed;
@@ -243,6 +258,11 @@ void RLE_BYTERUN_wxwidgetsFrame::OnButton6Click(wxCommandEvent& event)
     }
 }
 
+/*!
+* @brief Przycisk Dec BYTERUN: Jeśli pole Input nie jest puste wpisuje do zmiennej textInput zawartość pola tekstowego Input do skompresowania następnie. Następnie zapisuje do zmiennej compressed wynik wywołanej z pliku zewnętrznego funkcji dekompresującej algorytmem Byterun i wypisuje ten wynik do pola tektowego Output
+* @param
+* @return 
+*/
 void RLE_BYTERUN_wxwidgetsFrame::OnButton7Click(wxCommandEvent& event)
 {
     std::string textinput, compressed;
@@ -258,6 +278,11 @@ void RLE_BYTERUN_wxwidgetsFrame::OnButton7Click(wxCommandEvent& event)
     }
 }
 
+/*!
+* @brief Przycisk Input with Output zamienia ze sobą zawartość pól Input i Output i na odwrót
+* @param
+* @return 
+*/
 void RLE_BYTERUN_wxwidgetsFrame::OnButton4Click(wxCommandEvent& event)
 {
     if(TextCtrl2->GetValue() != wxString(wxT("")))
@@ -268,6 +293,11 @@ void RLE_BYTERUN_wxwidgetsFrame::OnButton4Click(wxCommandEvent& event)
     }
 }
 
+/*!
+* @brief Przycisk Clean Output zamienia ze sobą zawartość pól Input i Output i czyści pole Output
+* @param
+* @return 
+*/
 void RLE_BYTERUN_wxwidgetsFrame::OnButton5Click(wxCommandEvent& event)
 {
     if(TextCtrl2->GetValue() != wxString(wxT("")))
@@ -290,6 +320,11 @@ void RLE_BYTERUN_wxwidgetsFrame::OnButton1Click(wxCommandEvent& event)
     }
 }
 
+/*!
+* @brief Przycisk Save. Zapisuje za pomocą onkna systemowego do zmiennej filename ścieźke do wybranego pliku i zapisuje w nim zawartość pola tekstowego Output.
+* @param
+* @return 
+*/
 void RLE_BYTERUN_wxwidgetsFrame::OnButton8Click(wxCommandEvent& event)
 {
     wxString filename = wxFileSelector("Save to file",
@@ -303,6 +338,11 @@ void RLE_BYTERUN_wxwidgetsFrame::OnButton8Click(wxCommandEvent& event)
     }
 }
 
+/*!
+* @brief Czyści pola Input i Output.
+* @param
+* @return 
+*/
 void RLE_BYTERUN_wxwidgetsFrame::OnButton9Click(wxCommandEvent& event)
 {
     TextCtrl1->SetValue(wxString(wxT("")));

@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kompresja oraz tekstu na podstawie algorytmów RLE i ByteRun: Plik źródłowy RLE-and-BYTERUN/background_code.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Kompresja oraz tekstu na podstawie algorytmów RLE i ByteRun
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Autorzy: Kostecki Michał, Kłusek Wojciech Grupa 2|D13A</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('background__code_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">background_code.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="background__code_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BACKGROUND_CODE_H_INCLUDED</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BACKGROUND_CODE_H_INCLUDED</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;cstdio&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">string</span> <a class="code" href="background__code_8h.html#afcbd6e1c2b4014746d5939c3ee3958a5">intToStr</a>(<span class="keywordtype">int</span> n);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">string</span> <a class="code" href="background__code_8h.html#aac90fece704133846f13413f49f13a6a">compressRLE</a>(<span class="keywordtype">string</span> user_input);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">string</span> <a class="code" href="background__code_8h.html#a610f48f865f70ca1b7d47b536fe999ec">decompressRLE</a>(<span class="keywordtype">string</span> compressed);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">string</span> <a class="code" href="background__code_8h.html#a70ff585405ec35362b6ab8db76f49e6a">compressBYTERUN</a>(<span class="keywordtype">string</span> user_input);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">string</span> <a class="code" href="background__code_8h.html#a762c97b0e04c17e1bb7fe56a826d43f0">decompressBYTERUN</a>(<span class="keywordtype">string</span> compressed);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif // BACKGROUND_CODE_H_INCLUDED</span></div><div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="background__code_8h_html_a762c97b0e04c17e1bb7fe56a826d43f0"><div class="ttname"><a href="background__code_8h.html#a762c97b0e04c17e1bb7fe56a826d43f0">decompressBYTERUN</a></div><div class="ttdeci">string decompressBYTERUN(string compressed)</div><div class="ttdoc">Dekompresja Byterun:   Liczba dodatnia oznacza liczbę niepowtarzających się znaków a liczba ujemna li...</div><div class="ttdef"><b>Definition:</b> <a href="background__code_8cpp_source.html#l00205">background_code.cpp:205</a></div></div>
+<div class="ttc" id="background__code_8h_html_afcbd6e1c2b4014746d5939c3ee3958a5"><div class="ttname"><a href="background__code_8h.html#afcbd6e1c2b4014746d5939c3ee3958a5">intToStr</a></div><div class="ttdeci">string intToStr(int n)</div><div class="ttdoc">Funkcja konwertuje wartość typu int podaną w argumencie na napis. Używana na etapie kompresji liczby ...</div><div class="ttdef"><b>Definition:</b> <a href="background__code_8cpp_source.html#l00010">background_code.cpp:10</a></div></div>
+<div class="ttc" id="background__code_8h_html_a610f48f865f70ca1b7d47b536fe999ec"><div class="ttname"><a href="background__code_8h.html#a610f48f865f70ca1b7d47b536fe999ec">decompressRLE</a></div><div class="ttdeci">string decompressRLE(string compressed)</div><div class="ttdoc">Dekompresja RLE:   Funkcja przeszukuje skompresowany ciąg wejściowy, w pętli znak po znaku...</div><div class="ttdef"><b>Definition:</b> <a href="background__code_8cpp_source.html#l00091">background_code.cpp:91</a></div></div>
+<div class="ttc" id="background__code_8h_html_aac90fece704133846f13413f49f13a6a"><div class="ttname"><a href="background__code_8h.html#aac90fece704133846f13413f49f13a6a">compressRLE</a></div><div class="ttdeci">string compressRLE(string user_input)</div><div class="ttdoc">Kompresja algorytmem RLE: Najpierw z wejściowego ciągu znaków usuwamy znak oddzielenia &quot;`&quot; poszczegól...</div><div class="ttdef"><b>Definition:</b> <a href="background__code_8cpp_source.html#l00041">background_code.cpp:41</a></div></div>
+<div class="ttc" id="background__code_8h_html_a70ff585405ec35362b6ab8db76f49e6a"><div class="ttname"><a href="background__code_8h.html#a70ff585405ec35362b6ab8db76f49e6a">compressBYTERUN</a></div><div class="ttdeci">string compressBYTERUN(string user_input)</div><div class="ttdoc">Kompresja algorytmem Byterun:   Funkcja przegląda cały ciąg wejściowy szukając czy znak następny jest...</div><div class="ttdef"><b>Definition:</b> <a href="background__code_8cpp_source.html#l00149">background_code.cpp:149</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_1b95eeb57d12ea8d038c735fb3c3f438.html">RLE-and-BYTERUN</a></li><li class="navelem"><a class="el" href="background__code_8h.html">background_code.h</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>
