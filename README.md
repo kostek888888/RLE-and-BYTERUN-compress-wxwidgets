@@ -37,4 +37,4 @@ Here are couple screens of running app
 
 
 ### App saving to file:
-![Image of app](app_screenshots/8)
+![Image of app](app_screenshots/8.jpg)
